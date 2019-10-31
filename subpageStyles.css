@@ -1,0 +1,16 @@
+
+
+html, body{
+    height: 100%;
+}
+
+.subpage-content{
+    margin-top:7%;
+    height: fit-content;
+}
+
+.subpage-content .card {
+    padding: 35px;
+    opacity: 0.87;
+    border-radius: 25px;
+}

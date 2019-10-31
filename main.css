@@ -23,6 +23,17 @@
 .bg-olive{
     color: #423730;
 }
+.bg-muted-red{
+    background: #C67662;
+}
+
+.font-80{
+    font-size: 80px;
+}
+
+.no-border{
+    border: none;
+}
 
 .main-display{
     margin-left: 10%;
