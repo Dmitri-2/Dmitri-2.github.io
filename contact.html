@@ -95,7 +95,7 @@
 <script>
     $("#form-submit-btn").click(handleFormSubmission);
 
-    
+
     function handleFormSubmission() {
         const endpoint = "http://web.cecs.pdx.edu/~murphyd/mailme.php";
         const nameElement = $("#contact-name");
@@ -106,13 +106,21 @@
         let emailSubject = nameElement.val() + " : " + topicElement.val();
         let paylod = {
             "from": emailElement.val(),
-            "subject": emailElement,
+            "subject": emailSubject,
             "message": messageElement.val()
         };
 
-        $.post(endpoint, paylod, function (response, status) {
-            console.log(response);
-            console.log(status);
+        $.ajax({
+            url: endpoint,
+            type: "POST",
+//            crossDomain: true,
+            data: paylod,
+            success: function (result) {
+                console.log(result);
+            },
+            error: function (error) {
+                console.log(error);
+            }
         });
 
         clearForm();
