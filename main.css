@@ -1,0 +1,94 @@
+.bg-custom-header {
+    background: #423730;
+    /*Maybe*/
+    /*gradient(21deg, #3d5771 35%, transparent,#3D5772);*/
+}
+
+.text-muted-red{
+    color: #C67662;
+}
+.text-rose{
+    color: #955F4F;
+}
+.text-olive{
+    color: #423730;
+}
+.text-slate{
+    color: #89878A;
+}
+.text-slate-light{
+    color: #A2A2A7
+}
+
+.bg-olive{
+    color: #423730;
+}
+
+.main-display{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.main-content{
+    margin-top:12%;
+    height: fit-content;
+}
+
+.main-page-row{
+    margin-top: 15%;
+}
+
+.main-page-row .card{
+    max-width: 750px;
+}
+
+@media(min-width: 1500px){
+   #main-container{
+        max-width:1350px;
+    }
+}
+
+@media(max-width: 1200px){
+    body {
+        background: url("http://web.cecs.pdx.edu/~murphyd/pictures/eberhard-grossgasteiger-GWoLvxxjSzs-unsplash.jpg") fixed no-repeat;
+        height: 80% !important;
+    }
+}
+
+.main-content .card {
+    padding: 35px;
+    opacity: 0.87;
+    border-radius: 25px;
+}
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.mplus{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.normal-font{
+    font-family: sans-serif;
+}
+
+header .navbar{
+    padding: 1.5rem 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    opacity: 0.95;
+}
+
+header .navbar-brand{
+    font-size: 30px;
+}
+
+
+body {
+    background-image: url("http://web.cecs.pdx.edu/~murphyd/pictures/eberhard-grossgasteiger-GWoLvxxjSzs-unsplash.jpg");
+    background-size: cover;
+}
+html, body{
+    height: 125%;
+}
