@@ -61,7 +61,7 @@
 
 @media(max-width: 1200px){
     body {
-        background: url("http://web.cecs.pdx.edu/~murphyd/pictures/eberhard-grossgasteiger-GWoLvxxjSzs-unsplash.jpg") fixed no-repeat;
+        background: url("https://web.cecs.pdx.edu/~murphyd/pictures/eberhard-grossgasteiger-GWoLvxxjSzs-unsplash.jpg") fixed no-repeat;
         height: 80% !important;
     }
 }
