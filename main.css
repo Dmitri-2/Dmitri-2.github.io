@@ -35,6 +35,10 @@
     border: none;
 }
 
+.hidden{
+    display: none;
+}
+
 .main-display{
     margin-left: 10%;
     margin-top: 10%;

@@ -56,7 +56,13 @@
             <div class="col-md-6 mt-5 mt-md-0">
                 <div class="card h-100">
                     <h1 class="text-center"> Contact Form</h1>
-                    <form>
+
+                    <div id="success-message" class="p-5 text-center hidden">
+                        <h3>Message Sent <i class="fas fa-check text-success"></i> </h3>
+                        <button id="send-another-btn" class="btn btn-lg btn-secondary mt-5">Send Another Message</button>
+                    </div>
+
+                    <form id="main-form">
                         <div class="form-group">
                             <h5 class="mb-0"> <label for="contact-name"> Name </label> </h5>
                             <input id="contact-name" name="contact-name" class="form-control" type="text" placeholder="Name">
@@ -93,44 +99,59 @@
 </body>
 
 <script>
+    var formShown=true;
     $("#form-submit-btn").click(handleFormSubmission);
-
+    $("#send-another-btn").click(switchDisplay);
+    const endpoint = "https://web.cecs.pdx.edu/~murphyd/mailme.php";
+    const nameElement = $("#contact-name");
+    const emailElement = $("#contact-email");
+    const topicElement = $("#contact-subject");
+    const messageElement = $("#contact-message");
 
     function handleFormSubmission() {
-        const endpoint = "https://web.cecs.pdx.edu/~murphyd/mailme.php";
-        const nameElement = $("#contact-name");
-        const emailElement = $("#contact-email");
-        const topicElement = $("#contact-topic");
-        const messageElement = $("#contact-message");
-
-        let emailSubject = nameElement.val() + " : " + topicElement.val();
+        let emailSubject = nameElement.val() + ": " + topicElement.val();
         let paylod = {
             "from": emailElement.val(),
             "subject": emailSubject,
             "message": messageElement.val()
         };
 
-        $.ajax({
-            url: endpoint,
-            type: "POST",
-//            crossDomain: true,
-            data: paylod,
-            success: function (result) {
-                console.log(result);
-            },
-            error: function (error) {
-                console.log(error);
+        console.log(paylod);
+        $.post(endpoint, paylod, function (response, status) {
+            response = JSON.parse(response);
+            if(response["result"]==="bad_email"){
+                alert("Looks like the email you typed in contains an error!");
+            }
+            else if(response["result"]==="sent"){
+                switchDisplay();
+                clearForm();
+            }
+            else{
+                alert("Something went wrong. Sorry!")
             }
         });
 
-        clearForm();
+
     }
-    
+
+    function switchDisplay() {
+        if(formShown){
+            $("#main-form").hide();
+            $("#success-message").show();
+            formShown=false;
+        } else {
+            $("#main-form").show();
+            $("#success-message").hide();
+            formShown=true;
+        }
+    }
+
 
     function clearForm() {
-        $("#contact-name").val("");
-        $("#contact-email").val("");
-        $("#contact-message").val("");
+        nameElement.val("");
+        emailElement.val("");
+        topicElement.val("");
+        messageElement.val("");
     }
 
 </script>
