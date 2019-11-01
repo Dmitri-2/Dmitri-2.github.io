@@ -16,99 +16,99 @@
 
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-dark navbar-expand-lg bg-custom-header">
-        <a class="navbar-brand" href="index.html"> Personal Portfolio </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent">
-            <span class="navbar-toggler-icon"> </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item px-3">
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-custom-header">
+            <a class="navbar-brand" href="index.html"> Personal Portfolio </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+            <div id="navContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-slate-light" href="about.html"> About </a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-slate-light active" href="projects.html">  Projects </a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-slate-light" href="contact.html"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-                    <a class="nav-link text-slate-light" href="about.html"> About </a>
-                </li>
-                <li class="nav-item px-3">
+    <div class="subpage-content h-100">
+        <div id="main-container" class="container">
+            <div class="row d-block text-center">
+                <h1 class="text-muted-red font-80">  Projects </h1>
+                <h3 class="text-olive">
+                   My 3 Main Projects
+                </h3>
 
-                    <a class="nav-link text-slate-light active" href="projects.html">  Projects </a>
-                </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link text-slate-light" href="contact.html"> Contact </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
-
-<div class="subpage-content h-100">
-    <div id="main-container" class="container">
-        <div class="row d-block text-center">
-            <h1 class="text-muted-red font-80">  Projects </h1>
-            <h3 class="text-olive">
-               My 3 Main Projects
-            </h3>
-
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <h1 class="text-center mb-3 text-olive"> MusicQ </h1>
-                    <img    class="img-fluid rounded mx-auto"
-                            src="http://web.cecs.pdx.edu/~murphyd/pictures/music.jpg"
-                            alt="iPhone with earbuds on blue background"
-                            data-toggle="tooltip" data-placement="top" title="Photo by Juja Han via Unsplash"
-                            >
-                    <p class="mt-3 text-center">
-                        A music queueing website designed for ice rinks and figure skaters.
-                        Created with Laravel, React, Bootstrap and FontAwesome.
-                    </p>
-                    <div class="text-center mt-auto">
-                        <a href="https://musicq.io" class="btn btn-primary h5 mx-auto" role="button">  Visit MusicQ </a>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <h1 class="text-center mb-3 text-olive"> MusicQ </h1>
+                        <img    class="img-fluid rounded mx-auto"
+                                src="http://web.cecs.pdx.edu/~murphyd/pictures/music.jpg"
+                                alt="iPhone with earbuds on blue background"
+                                data-toggle="tooltip" data-placement="top" title="Photo by Juja Han via Unsplash"
+                                >
+                        <p class="mt-3 text-center">
+                            A music queueing website designed for ice rinks and figure skaters.
+                            Created with Laravel, React, Bootstrap and FontAwesome.
+                        </p>
+                        <div class="text-center mt-auto">
+                            <a href="https://musicq.io" class="btn btn-primary h5 mx-auto" role="button">  Visit MusicQ </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card h-100">
+                        <h1 class="text-center mb-3 text-olive"> PDX Field Guide </h1>
+                        <img    class="img-fluid rounded mx-auto"
+                                src="http://web.cecs.pdx.edu/~murphyd/pictures/park.jpg"
+                                alt="Park in the middle of city with skyscrapers"
+                                data-toggle="tooltip" data-placement="top" title="Photo by chuttersnap via Unsplash"
+                        >
+                        <p class="mt-3 text-center">
+                            A interactive field guide for some urban plants on the PSU campus.
+                            This was my final project for Honors 403: Biodiversity Seminar.
+                        </p>
+                        <div class="text-center mt-auto">
+                            <a href="http://pdxfieldguide.com" class="btn btn-primary h5 mx-auto" role="button">  Visit the Field Guide </a>
+                        </div>                </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card h-100">
+                        <h1 class="text-center mb-3 text-olive"> Stock AI </h1>
+                        <img    class="img-fluid rounded mx-auto"
+                                src="http://web.cecs.pdx.edu/~murphyd/pictures/stocks.jpg"
+                                alt="Computer screen with stock website"
+                                data-toggle="tooltip" data-placement="top" title="Photo by Carlos Muza via Unsplash"
+                        >
+                        <p class="mt-3 text-center">
+                            A "for fun" project that uses machine learning to make stock predictions.
+                            Has a Python backend that uses the SciKit Learn library.
+                        </p>
+                        <div class="text-center mt-auto">
+                            <a href="http://www.stockai.io" class="btn btn-primary h5 mx-auto" role="button">  Visit StockAI </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 ">
-                <div class="card h-100">
-                    <h1 class="text-center mb-3 text-olive"> PDX Field Guide </h1>
-                    <img    class="img-fluid rounded mx-auto"
-                            src="http://web.cecs.pdx.edu/~murphyd/pictures/park.jpg"
-                            alt="Park in the middle of city with skyscrapers"
-                            data-toggle="tooltip" data-placement="top" title="Photo by chuttersnap via Unsplash"
-                    >
-                    <p class="mt-3 text-center">
-                        A interactive field guide for some urban plants on the PSU campus.
-                        This was my final project for Honors 403: Biodiversity Seminar.
-                    </p>
-                    <div class="text-center mt-auto">
-                        <a href="http://pdxfieldguide.com" class="btn btn-primary h5 mx-auto" role="button">  Visit the Field Guide </a>
-                    </div>                </div>
-            </div>
-            <div class="col-md-4 ">
-                <div class="card h-100">
-                    <h1 class="text-center mb-3 text-olive"> Stock AI </h1>
-                    <img    class="img-fluid rounded mx-auto"
-                            src="http://web.cecs.pdx.edu/~murphyd/pictures/stocks.jpg"
-                            alt="Computer screen with stock website"
-                            data-toggle="tooltip" data-placement="top" title="Photo by Carlos Muza via Unsplash"
-                    >
-                    <p class="mt-3 text-center">
-                        A "for fun" project that uses machine learning to make stock predictions.
-                        Has a Python backend that uses the SciKit Learn library.
-                    </p>
-                    <div class="text-center mt-auto">
-                        <a href="http://www.stockai.io" class="btn btn-primary h5 mx-auto" role="button">  Visit StockAI </a>
-                    </div>                </div>
-            </div>
+            
         </div>
     </div>
-</div>
 
-<footer class="navbar navbar-light bg-light mt-5">
-    <div class="navar-nav d-flex justify-content-between w-100">
-        <div class="nav-item nav-link"> Made with Bootstrap, FontAwesome and jQuery</div>
-        <div class="nav-item nav-link"> Background Photo: Eberhard Grossgasteiger (Unsplash)</div>
-    </div>
-</footer>
+    <footer class="navbar navbar-light bg-light mt-5">
+        <div class="navar-nav d-flex justify-content-between w-100">
+            <div class="nav-item nav-link"> Made with Bootstrap, FontAwesome and jQuery</div>
+            <div class="nav-item nav-link"> Background Photo: Eberhard Grossgasteiger (Unsplash)</div>
+        </div>
+    </footer>
 </body>
 
 <script>
