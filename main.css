@@ -39,6 +39,14 @@
     display: none;
 }
 
+.full-opacity{
+    opacity: 1;
+}
+
+.circle-list{
+    list-style-type: circle;
+}
+
 .main-display{
     margin-left: 10%;
     margin-top: 10%;
