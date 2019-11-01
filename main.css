@@ -1,7 +1,5 @@
 .bg-custom-header {
     background: #423730;
-    /*Maybe*/
-    /*gradient(21deg, #3d5771 35%, transparent,#3D5772);*/
 }
 
 .text-muted-red{
@@ -80,7 +78,7 @@
 
 @media(max-width: 1200px){
     body {
-        background: url("https://web.cecs.pdx.edu/~murphyd/pictures/eberhard-grossgasteiger-GWoLvxxjSzs-unsplash.jpg") fixed no-repeat;
+        background: url("https://web.cecs.pdx.edu/~murphyd/pictures/eberhard-grossgasteiger-GWoLvxxjSzs-unsplash.jpg") fixed no-repeat grey;
         height: 80% !important;
     }
 }
@@ -114,9 +112,8 @@ header .navbar-brand{
     font-size: 30px;
 }
 
-
 body {
-    background-image: url("http://web.cecs.pdx.edu/~murphyd/pictures/eberhard-grossgasteiger-GWoLvxxjSzs-unsplash.jpg");
+    background: url("http://web.cecs.pdx.edu/~murphyd/pictures/eberhard-grossgasteiger-GWoLvxxjSzs-unsplash.jpg") #d5d5d5;
     background-size: cover;
 }
 html, body{
