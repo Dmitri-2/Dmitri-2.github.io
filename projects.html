@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <title>Dmitri Murphy</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 </head>
-<body>
+<body style="height: 100%; ">
     <header>
         <nav class="navbar navbar-dark navbar-expand-lg bg-custom-header">
             <a class="navbar-brand" href="index.html"> Personal Portfolio </a>
@@ -38,7 +39,7 @@
         </nav>
     </header>
 
-    <div class="subpage-content h-100">
+    <div class="subpage-content">
         <div id="main-container" class="container">
             <div class="row d-block text-center">
                 <h1 class="text-muted-red font-80">  Projects </h1>
@@ -50,18 +51,18 @@
             <div class="row mt-5">
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <h1 class="text-center mb-3 text-olive"> MusicQ </h1>
+                        <h1 class="text-center mb-3 text-olive"> RinkRec </h1>
                         <img    class="img-fluid rounded mx-auto"
                                 src="http://web.cecs.pdx.edu/~murphyd/pictures/music.jpg"
                                 alt="iPhone with earbuds on blue background"
                                 data-toggle="tooltip" data-placement="top" title="Photo by Juja Han via Unsplash"
                                 >
                         <p class="mt-3 text-center">
-                            A music queueing website designed for ice rinks and figure skaters.
-                            Created with Laravel, React, Bootstrap and FontAwesome.
+                            A rink management system designed for ice rinks and figure skaters.
+                            Created with Laravel, Vue, TailwindCSS and InertiaJS.
                         </p>
                         <div class="text-center mt-auto">
-                            <a href="https://musicq.io" class="btn btn-primary h5 mx-auto" role="button">  Visit MusicQ </a>
+                            <a href="https://demo.rinkrec.com" class="btn btn-primary h5 mx-auto" role="button">  Visit RinkRec </a>
                         </div>
                     </div>
                 </div>
@@ -77,9 +78,10 @@
                             A interactive field guide for some urban plants on the PSU campus.
                             This was my final project for Honors 403: Biodiversity Seminar.
                         </p>
-                        <div class="text-center mt-auto">
-                            <a href="http://pdxfieldguide.com" class="btn btn-primary h5 mx-auto" role="button">  Visit the Field Guide </a>
-                        </div>                </div>
+<!--                        <div class="text-center mt-auto">-->
+<!--                            <a href="http://pdxfieldguide.com" class="btn btn-primary h5 mx-auto" role="button">  Visit the Field Guide </a>-->
+<!--                        </div>                -->
+                    </div>
                 </div>
                 <div class="col-md-4 ">
                     <div class="card h-100">
@@ -93,9 +95,9 @@
                             A "for fun" project that uses machine learning to make stock predictions.
                             Has a Python backend that uses the SciKit Learn library.
                         </p>
-                        <div class="text-center mt-auto">
-                            <a href="http://www.stockai.io" class="btn btn-primary h5 mx-auto" role="button">  Visit StockAI </a>
-                        </div>
+<!--                        <div class="text-center mt-auto">-->
+<!--                            <a href="http://www.stockai.io" class="btn btn-primary h5 mx-auto" role="button">  Visit StockAI </a>-->
+<!--                        </div>-->
                     </div>
                 </div>
             </div>
