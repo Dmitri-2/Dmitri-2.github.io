@@ -113,7 +113,9 @@
             <h3 class="text-xl font-semibold text-center mb-3"> Highlights </h3>
             <div class="flex flex-col sm:flex-row space-x-5">
               <div class="rounded border-4 border-cyan-800 w-full sm:w-1/2">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/ult7O2-OwSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <video controls>
+                  <source src="https://web.cecs.pdx.edu/~murphyd/pictures/competition-video.mp4" type="video/mp4">
+                </video>
               </div>
               <div class="w-full sm:w-1/2 mt-8 sm:mt-0">
                 As a competitive skater, I used to spend a lot of time training and competed at the Junior
