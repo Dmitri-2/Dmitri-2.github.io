@@ -1,140 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
-    <title>Dmitri Murphy</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Nunito|Raleway|Reenie+Beanie|Roboto|Sacramento&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="main.css" rel="stylesheet" type="text/css">
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Solitreo&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-</head>
-<body style="height: 100%; ">
-<header>
-    <nav class="navbar navbar-dark navbar-expand-lg bg-custom-header">
-        <a class="navbar-brand" href="index.html"> Personal Portfolio </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent">
-            <span class="navbar-toggler-icon"> </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item px-3">
-                    <a class="nav-link text-slate-light" href="about.html"> About </a>
-                </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link text-slate-light" href="projects.html">  Projects </a>
-                </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link text-slate-light" href="contact.html"> Contact </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
-
-<div class="main-content">
-    <div id="main-container" class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div>
-                    <h3 class="display-3 text-muted-red roboto"> Dmitri Murphy</h3>
-                    <h3 class="main-subtext mplus ml-1"> Software Engineer, AI Enthusiast </h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="row main-page-row d-flex flex-row-reverse">
-            <div class="card">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between w-100 mb-4">
-                        <div class="d-flex">
-                            <h1><i class="far fa-compass"></i></h1>
-                            <div>
-                                <h3 class="ml-3">About Me </h3>
-                                <h6 class="ml-3 text-muted card-subtitle">Who is Dmitri?</h6>
-                            </div>
-                        </div>
-                        <div class="right-side d-flex">
-                            <a href="about.html">
-                                <button type="button" class="btn btn-dark p-3"> About Me</button>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="card-text">
-                        A mysterious person who does it all. I currently work as a Software Engineer,
-                        figure skating coach, and formerly volunteered with the Computer Action Team at PSU. Learn more about me on the About page.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row main-page-row d-flex">
-            <div class="card">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between w-100 mb-4">
-                        <div class="d-flex">
-                            <h1 class="mt-1"><i class="fas fa-code"></i></h1>
-                            <div>
-                                <h3 class="ml-3">Projects </h3>
-                                <h6 class="ml-3 text-muted card-subtitle">What am I up to?</h6>
-                            </div>
-                        </div>
-                        <div class="right-side d-flex">
-                            <a href="projects.html">
-                                <button type="button" class="btn btn-dark p-3"> Project Page </button>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="card-text">
-                        I've done a lot of work in various disciplines. I have several projects that I am currently working on including a
-                        rink management system.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row main-page-row d-flex flex-row-reverse">
-            <div class="card">
-                <div class="card-body pb-5">
-                    <div class="d-flex justify-content-between w-100 mb-4">
-                        <div class="d-flex">
-                            <h1 class="mt-1"><i class="fas fa-envelope"></i></h1>
-                            <div>
-                                <h3 class="ml-3">Get In Touch </h3>
-                                <h6 class="ml-3 text-muted card-subtitle">Want to talk?</h6>
-                            </div>
-                        </div>
-                        <div class="right-side d-flex">
-                            <a href="contact.html">
-                                <button type="button" class="btn btn-dark p-3"> Contact Form </button>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="card-text">
-                        I'm always looking for new friends and people to work with. Feel free to use the contact form to send
-                        me a message (or send me an email at <a href="mailto:dmitri2@pdx.edu">dmitri2@pdx.edu</a>).
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-</div>
-
-
-<footer class="navbar navbar-light bg-light mt-5">
-    <div class="navar-nav d-flex justify-content-between w-100">
-        <div class="nav-item nav-link"> Made with Bootstrap, FontAwesome and jQuery</div>
-        <div class="nav-item nav-link"> Background Photo: Eberhard Grossgasteiger (Unsplash)</div>
-    </div>
-</footer>
-</body>
-
-
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+      <title>Dmitri Murphy</title>
+    <script type="module" crossorigin src="/assets/index-1897dd26.js"></script>
+    <link rel="stylesheet" href="/assets/index-65e5173a.css">
+  </head>
+  <body class="h-full">
+    <div id="app" class="h-full"></div>
+    
+  </body>
 </html>
